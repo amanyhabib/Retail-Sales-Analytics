@@ -333,11 +333,7 @@ Dashboard/Retail_Sales_Analytics.pbix
 - Cloud Deployment
 - Real-Time Dashboard
 
----
 
-# 👨‍💻 Author
-
-**Ahmed [Your Last Name]**
 
 
 ## ⭐ If you found this project useful, consider giving it a star!
