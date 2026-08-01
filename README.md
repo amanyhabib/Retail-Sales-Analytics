@@ -244,19 +244,19 @@ Dashboard features include:
 
 ## 📈 Overview Dashboard
 
-![Overview](Overview.png)
+![Overview](Images/Overview.png)
 
 ---
 
 ## 👥 Customer & Product Dashboard
 
-![Customer](Customer_Product.png)
+![Customer](Images/Customer_Product.png)
 
 ---
 
 ## 🏪 Store Performance Dashboard
 
-![Store](Store_Performance.png)
+![Store](Images/Store_Performance.png)
 
 ---
 
