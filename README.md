@@ -1,8 +1,6 @@
 # 📊 Retail Sales Analytics & Customer Churn Prediction
 
-<p align="center">
-  <img src="Images/Dashboard.png" alt="Retail Sales Analytics Dashboard" width="900"/>
-</p>
+
 
 <p align="center">
 
