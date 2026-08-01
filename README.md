@@ -1,132 +1,345 @@
-# 📊 Retail Sales Analytics Dashboard
+# 📊 Retail Sales Analytics & Customer Churn Prediction
 
-An end-to-end Business Intelligence project that combines **Python** for data preprocessing and **Microsoft Power BI** for interactive dashboard development.
+<p align="center">
+  <img src="Images/Dashboard.png" alt="Retail Sales Analytics Dashboard" width="900"/>
+</p>
+
+<p align="center">
+
+![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python)
+![Power BI](https://img.shields.io/badge/Power%20BI-Dashboard-yellow?logo=powerbi)
+![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-150458?logo=pandas)
+![NumPy](https://img.shields.io/badge/NumPy-Scientific%20Computing-013243?logo=numpy)
+![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-Machine%20Learning-orange?logo=scikitlearn)
+![Streamlit](https://img.shields.io/badge/Streamlit-Web%20Application-FF4B4B?logo=streamlit)
+
+</p>
 
 ---
 
 # 📌 Project Overview
 
-This project analyzes retail sales data to provide valuable business insights into:
+This project presents an end-to-end Retail Sales Analytics solution that combines **Python**, **Machine Learning**, **Web Scraping**, and **Microsoft Power BI** to transform raw retail transaction data into meaningful business insights.
 
-- Sales Performance
-- Customer Behavior
-- Product Performance
-- Store Performance
+The workflow starts with data preprocessing and feature engineering, followed by exploratory data analysis (EDA), customer churn prediction, web scraping for additional product information, and interactive dashboard development using Power BI.
 
-The project covers the complete analytics workflow from raw data cleaning using Python to dashboard development in Power BI.
+---
+
+# 🎯 Project Objectives
+
+- Clean and preprocess retail sales data
+- Merge and transform multiple datasets
+- Perform Exploratory Data Analysis (EDA)
+- Generate automated business insights
+- Engineer features for machine learning
+- Predict customer churn using Logistic Regression
+- Improve model performance using SMOTE and Hyperparameter Tuning
+- Collect product information using Web Scraping
+- Build an interactive Power BI dashboard
 
 ---
 
 # 🛠 Technologies Used
 
+## Programming Languages
+
 - Python
+
+## Python Libraries
+
 - Pandas
 - NumPy
+- Matplotlib
+- Scikit-Learn
+- BeautifulSoup
+- Requests
+- Streamlit
+
+## Business Intelligence
+
 - Microsoft Power BI
 - Power Query
 - DAX
-- Matplotlib
 
 ---
 
-# 📂 Project Structure
+# 📂 Repository Structure
 
-```
-Retail-Sales-Analytics
+```text
+Retail-Sales-Analytics/
 │
-├── Dashboard
+├── Dashboard/
 │   └── Retail_Sales_Analytics.pbix
 │
-├── Data
-│   └── Retail_Sales.csv
+├── Data/
+│   ├── Retail_Sales.xlsx
+│   └── Retail_Sales_Cleaned.csv
 │
-├── Data_Preprocessing
-│   ├── Retail_Data_Cleaning.ipynb
-│   └── Retail_Data_Cleaning.py
+├── Notebook/
+│   └── Retail_Analytics_Project.ipynb
 │
-├── Images
+├── Streamlit/
+│   └── app.py
+│
+├── Web_Scraping/
+│   └── scraper.py
+│
+├── Images/
 │   ├── Dashboard.png
 │   ├── Overview.png
 │   ├── Customer_Product.png
-│   └── Store_Performance.png
+│   ├── Store_Performance.png
+│   ├── Churn_Model.png
+│   └── WebScraping.png
 │
+├── requirements.txt
+├── LICENSE
+├── .gitignore
 └── README.md
 ```
 
 ---
 
-# 📈 Dashboard Pages
+# 🔄 Project Workflow
 
-## 1️⃣ Overview
-
-Provides a high-level summary of the business using KPIs and sales trends.
-
-### Key Insights
-
-- Total Sales
-- Total Orders
-- Total Profit
-- Profit Margin
-- Monthly Sales Trend
-- Top Products
-- Sales Target Achievement
-- Gender Distribution
-
----
-
-## 2️⃣ Customer & Product
-
-Focuses on customer purchasing behavior and product performance.
-
-### Key Insights
-
-- Total Customers
-- Average Order Value
-- Average Profit per Order
-- Product Profit Analysis
-- Category Quantity Distribution
-- Top Products
+```text
+Raw Retail Dataset
+        │
+        ▼
+Data Cleaning
+        │
+        ▼
+Data Transformation
+        │
+        ▼
+Feature Engineering
+        │
+        ▼
+Exploratory Data Analysis (EDA)
+        │
+        ▼
+Business Insights
+        │
+        ▼
+Customer Churn Prediction
+        │
+        ▼
+Web Scraping
+        │
+        ▼
+Power BI Dashboard
+```
 
 ---
 
-## 3️⃣ Store Performance
+# 🧹 Data Preprocessing
 
-Analyzes store-level performance.
+The retail dataset was cleaned and transformed before analysis.
 
-### Key Insights
+Main preprocessing tasks include:
 
-- Store Sales vs Profit
-- Store Comparison
-- Decomposition Tree Analysis
-- Store Sales Distribution
-- Performance Matrix
+- Handling missing values
+- Removing duplicate records
+- Data type conversion
+- Date transformation
+- Dataset merging
+- Feature engineering
+- Data validation
 
 ---
 
-# 🚀 Features
+# 📊 Exploratory Data Analysis (EDA)
 
+EDA was performed to identify trends, patterns, and business opportunities.
+
+Analysis includes:
+
+- Sales Trend Analysis
+- Product Performance
+- Customer Analysis
+- Store Performance
+- Category Analysis
+- Profit Analysis
+- Correlation Analysis
+- Business KPI Evaluation
+
+---
+
+# 📈 Feature Engineering
+
+Additional features were created to improve business analysis and machine learning performance.
+
+Examples include:
+
+- Sales Metrics
+- Customer Metrics
+- Date-Based Features
+- RFM Features
+  - Recency
+  - Frequency
+  - Monetary
+
+---
+
+# 🤖 Customer Churn Prediction
+
+A machine learning model was developed to predict customer churn.
+
+The workflow includes:
+
+- Data Preparation
+- Feature Selection
+- Train/Test Split
+- Logistic Regression
+- Model Evaluation
+- Confusion Matrix
+- ROC Curve
+- Cross Validation
+- Grid Search
+- Threshold Tuning
+- SMOTE Oversampling
+- Bootstrap Evaluation
+
+---
+
+# 🌐 Web Scraping
+
+A web scraping module was implemented using **BeautifulSoup** and **Requests** to collect product information from online sources.
+
+The scraped data is cleaned and analyzed to complement the retail sales dataset.
+
+Technologies used:
+
+- BeautifulSoup
+- Requests
+- Pandas
+
+---
+
+# 💻 Streamlit Application
+
+A Streamlit web application was developed to provide an interactive interface for the Customer Churn Prediction model.
+
+Users can enter customer information and receive real-time churn predictions.
+
+---
+
+# 📊 Power BI Dashboard
+
+The cleaned dataset was imported into Microsoft Power BI to develop an interactive dashboard for business analysis.
+
+Dashboard features include:
+
+- Sales Performance
+- Customer Analysis
+- Product Performance
+- Store Performance
 - Interactive Filters
-- Dynamic KPIs
+- KPI Cards
+- Drill-Down Analysis
 - DAX Measures
 - Power Query Transformations
-- Conditional Formatting
-- Decomposition Tree
-- Drill Down Analysis
-- Interactive Navigation
 
 ---
 
-# 📊 Business Questions Answered
+# 📸 Dashboard Preview
 
-- Which store generates the highest sales?
-- Which products generate the most profit?
-- Which category contributes the most revenue?
-- How do customers purchase products?
-- How does each store perform?
-- What factors drive store profitability?
+## 📈 Overview Dashboard
+
+![Overview](Overview.png)
+
+---
+
+## 👥 Customer & Product Dashboard
+
+![Customer](Customer_Product.png)
+
+---
+
+## 🏪 Store Performance Dashboard
+
+![Store](Store_Performance.png)
+
+---
+
+# 📊 Key Performance Indicators
+
+- Total Sales
+- Total Profit
+- Total Orders
+- Profit Margin
+- Average Order Value
+- Customer Count
+- Product Performance
+- Store Performance
+
+---
+
+# 💼 Business Questions Answered
+
+- Which stores generate the highest sales?
+- Which products generate the highest profit?
+- Which product categories perform best?
+- How do customers behave across different segments?
+- Which customers are likely to churn?
+- What factors influence store profitability?
+- How can business performance be improved?
+
+---
+
+# 🚀 Getting Started
+
+## Clone the Repository
+
+```bash
+git clone https://github.com/YourUsername/Retail-Sales-Analytics.git
+```
+
+## Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+## Run the Notebook
+
+Open:
+
+```text
+Notebook/Retail_Analytics_Project.ipynb
+```
+
+Run all notebook cells.
+
+## Launch Streamlit
+
+```bash
+streamlit run app.py
+```
+
+## Open Power BI Dashboard
+
+Open the following file using Microsoft Power BI Desktop:
+
+```text
+Dashboard/Retail_Sales_Analytics.pbix
+```
+
+---
+
+# 📈 Future Improvements
+
+- Sales Forecasting
+- Customer Segmentation
+- SQL Database Integration
+- Cloud Deployment
+- Real-Time Dashboard
 
 ---
 
 # 👨‍💻 Author
 
-Your Name
+**Ahmed [Your Last Name]**
+
+
+## ⭐ If you found this project useful, consider giving it a star!
