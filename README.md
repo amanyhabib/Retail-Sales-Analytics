@@ -333,6 +333,21 @@ Dashboard/Retail_Sales_Analytics.pbix
 - Cloud Deployment
 - Real-Time Dashboard
 
+## 👥 Team Members
+
+### Amani Ramadan
+
+🔗 GitHub: https://github.com/amanyhabib
+
+---
+
+### Milisia Makram
+
+🔗 GitHub: https://github.com/Milisiaa
+
+---
+
+### Shahd Ragab
 
 
 
